@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gacha Spinner - Jujutsu Grades</title>
+<title>Gacha Spinner - Clan Techniques</title>
 <style>
     body {
         margin: 0;
@@ -49,24 +49,24 @@
 </head>
 <body>
 <div class="container">
-    <h1>Click the button to spin and reveal your Jujutsu Grade!</h1>
+    <h1>Click the button to spin and reveal your clan and technique!</h1>
     <button onclick="spinGacha()">Spin</button>
     <div id="result"></div>
 </div>
 <script>
     function spinGacha() {
-        const grades = [
-            "Grade 4 - 'A wooden bat is enough.'",
-            "Grade 3 - 'If you have a handgun, you can rest easy.'",
-            "Grade 2 - 'Close call with a shotgun.'",
-            "Grade 1 - 'Even a tank might be insufficient.'",
-            "Special Grade - 'Cluster bombs might work.'"
+        const clans = [
+            "Zenin Clan - Ten Shadows Technique",
+            "Gojo Clan - Limitless",
+            "Gojo Clan - Six Eyes",
+            "Kamo Clan - Blood Manipulation",
+            "Inumaki Clan - Cursed Speech"
         ];
 
-        const randomIndex = Math.floor(Math.random() * grades.length);
-        const selectedGrade = grades[randomIndex];
+        const randomIndex = Math.floor(Math.random() * clans.length);
+        const selectedClan = clans[randomIndex];
 
-        document.getElementById('result').innerText = `You got: ${selectedGrade}`;
+        document.getElementById('result').innerText = `You got: ${selectedClan}`;
     }
 </script>
 </body>
